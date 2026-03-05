@@ -12,6 +12,15 @@ const Create = () => {
     const copydata = [...data];
     copydata.push(recipe);
     setData(copydata);
+
+    // OR
+
+    setData((prev) => [...prev, recipe]);
+
+    // OR
+
+    setData([...data, recipe]);
+
     reset();
   };
 
