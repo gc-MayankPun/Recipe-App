@@ -35,6 +35,13 @@ const Create = () => {
         placeholder="Recipe Title"
       />
 
+      <input
+        className="block border-b outline-0 p-2"
+        {...register("chef")}
+        type="text"
+        placeholder="Recipe Chef"
+      />
+
       <textarea
         className="block border-b outline-0 p-2"
         {...register("description")}
